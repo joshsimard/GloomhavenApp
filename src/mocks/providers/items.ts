@@ -16,39 +16,34 @@ export class Items {
   constructor() {
     let items = [
       {
-        "name": "Burt Bear",
-        "profilePic": "assets/img/speakers/bear.jpg",
-        "about": "Burt is a Bear."
+        "name": "Brute",
+        "profilePic": "assets/img/speakers/brute_avatar.png",
+        "about": "The Brute is your typical tank. He gets up in the monster's face with melee attacks and has defensive abilities."
       },
       {
-        "name": "Charlie Cheetah",
-        "profilePic": "assets/img/speakers/cheetah.jpg",
-        "about": "Charlie is a Cheetah."
+        "name": "Scoundrel",
+        "profilePic": "assets/img/speakers/scoundrel_avatar.png",
+        "about": "The Scoundrel is an opportunistic melee attacker. She can deal huge damage in the right circumstances."
       },
       {
-        "name": "Donald Duck",
-        "profilePic": "assets/img/speakers/duck.jpg",
-        "about": "Donald is a Duck."
+        "name": "Spellweaver",
+        "profilePic": "assets/img/speakers/spellweaver_avatar.png",
+        "about": "The Spellweaver is your multi-target ranged attacker, throwing out big spells to do lots of damage, but she can burn out quickly if you don't play your cards right."
       },
       {
-        "name": "Eva Eagle",
-        "profilePic": "assets/img/speakers/eagle.jpg",
-        "about": "Eva is an Eagle."
+        "name": "Tinkerer",
+        "profilePic": "assets/img/speakers/tinkerer_avatar.png",
+        "about": "The Tinkerer is healing and support, providing bonuses to his allies and negatives to his enemies. He's also got a good amount of ranged damage."
       },
       {
-        "name": "Ellie Elephant",
-        "profilePic": "assets/img/speakers/elephant.jpg",
-        "about": "Ellie is an Elephant."
+        "name": "Cragheart",
+        "profilePic": "assets/img/speakers/cragheart_avatar.png",
+        "about": "The Cragheart is more of a jack-of-all-trades. It's got melee attacks, ranged attacks, and healing, but you also have to be careful about hurting your allies."
       },
       {
-        "name": "Molly Mouse",
-        "profilePic": "assets/img/speakers/mouse.jpg",
-        "about": "Molly is a Mouse."
-      },
-      {
-        "name": "Paul Puppy",
-        "profilePic": "assets/img/speakers/puppy.jpg",
-        "about": "Paul is a Puppy."
+        "name": "Mindthief",
+        "profilePic": "assets/img/speakers/mindthief_avatar.png",
+        "about": "The Mindthief is just weird. She has a lot of crazy abilities - summoning, mind control, and psychic augments that enhance her melee attacks."
       }
     ];
 
