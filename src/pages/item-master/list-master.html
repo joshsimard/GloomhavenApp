@@ -28,7 +28,7 @@
   <ion-fab right bottom>
     <button ion-fab color="light"><ion-icon name="add"></ion-icon></button>
     <ion-fab-list side="left">
-      <button ion-fab *ngFor="let item of currentItems" (click)="openItem(item)"><ion-avatar><img [src]="item.profilePic" /></ion-avatar></button>
+      <button ion-fab *ngFor="let item of currentItems" (click)="addCharacter(item)"><ion-avatar><img [src]="item.profilePic" /></ion-avatar></button>
     </ion-fab-list>
   </ion-fab>
 </ion-content>
