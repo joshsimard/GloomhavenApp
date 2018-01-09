@@ -26,11 +26,11 @@ export class ListMasterPage {
    * Prompt the user to add a new item. This shows our ItemCreatePage in a
    * modal and then adds the new item to our data source if the user created one.
    */
-  addItem() {
-    let addModal = this.modalCtrl.create('ItemCreatePage');
-    addModal.onDidDismiss(item => {
-      if (item) {
-        this.items.add(item);
+  addCharacter( item ) {
+    let addModal = this.modalCtrl.create('CharacterCreatePage');
+    addModal.onDidDismiss(resultItem => {
+      if (resultItem) {
+        this.items.add(resultItem);
       }
     })
     addModal.present();

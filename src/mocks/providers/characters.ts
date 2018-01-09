@@ -1,10 +1,10 @@
 import { Injectable } from '@angular/core';
 
-import { Item } from '../../models/item';
+import { Character } from '../../models/character';
 
 @Injectable()
-export class Items {
-  items: Item[] = [];
+export class Characters {
+  characters: Character[] = [];
 
   defaultItem: any = {
     "name": "Burt Bear",
@@ -15,9 +15,9 @@ export class Items {
 
 
   constructor() {
-    let items = [
+    let characters = [
       {
-        "name": "Poop",
+        "name": "Brute",
         "profilePic": "assets/img/speakers/brute_avatar.png",
         "largePic": "assets/img/speakers/brute_profile.png",
         "about": "The Brute is your typical tank. He gets up in the monster's face with melee attacks and has defensive abilities."
@@ -54,34 +54,34 @@ export class Items {
       }
     ];
 
-    for (let item of items) {
-      this.items.push(new Item(item));
+    for (let character of characters) {
+      this.characters.push(new Character(character));
     }
   }
 
   query(params?: any) {
     if (!params) {
-      return this.items;
+      return this.characters;
     }
 
-    return this.items.filter((item) => {
+    return this.characters.filter((character) => {
       for (let key in params) {
-        let field = item[key];
+        let field = character[key];
         if (typeof field == 'string' && field.toLowerCase().indexOf(params[key].toLowerCase()) >= 0) {
-          return item;
+          return character;
         } else if (field == params[key]) {
-          return item;
+          return character;
         }
       }
       return null;
     });
   }
 
-  add(item: Item) {
-    this.items.push(item);
+  add(: Character) {
+    this.characters.push();
   }
 
-  delete(item: Item) {
-    this.items.splice(this.items.indexOf(item), 1);
+  delete(: Character) {
+    this.characters.splice(this.characters.indexOf(), 1);
   }
 }
